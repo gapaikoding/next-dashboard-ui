@@ -1,3 +1,138 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-calendar {
+    width: 100% !important;
+    border: none !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+.react-calendar__navigation__label__labelText {
+    font-weight: 600 !important;
+}
+
+.react-calendar__tile--active {
+    background-color: #C3EBFA !important;
+    color: black !important;
+}
+
+.rbc-btn-group:first-child {
+    font-style: 13px !important;    
+}
+
+.rbc-btn-group:first-child button{
+    border: none !important; 
+    background-color: #fefce8 !important;
+    margin-left: 2px !important;
+}
+.rbc-toolbar-label {
+    text-align: right !important;
+    padding: 0x 2px !important;
+}
+
+.rbc-btn-group:last-child {
+    font-style: 13px !important;   
+}
+
+.rbc-btn-group:last-child button{
+    border: none !important; 
+    background-color: #f1f0ff !important;
+    margin-left: 2px !important;
+}
+
+.rbc-toolbar button.rbc-active {
+    background-color: #dbdafe !important;
+    box-shadow: none !important;
+}
+
+.rbc-time-view {
+    border-color: #eee !important;
+}
+
+.rbc-time-header {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.rbc-allday-cell {
+    display: none;
+}
+
+.rbc-time-content {
+    border: none !important;
+}
+
+.rbc-time-slot {
+    height: auto !important; /* KUNCI: Biarkan baris waktu melar */
+    min-height: 20px;  
+}
+
+.rbc-time-gutter.rbc-time-column {
+    font-size: 12px !important;
+}
+
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+    padding: 0px, 20px !important
+}
+
+.rbc-timeslot-group {
+    background-color: #f7fdff !important;
+}
+
+.rbc-day-slot {
+    font-size: 14px !important;
+}
+
+.rbc-day-slot .rbc-event-segment {
+    position: relative !important; /* KUNCI: Membuat event berderet vertikal */
+    width: 100% !important; /* Pastikan mengambil lebar penuh di container */
+    left: 0 !important;
+    margin-bottom: 4px; /* Memberi jarak antar event vertikal */
+}
+
+.rbc-event {
+  border: none !important;
+  color: black !important;
+  padding: 8px !important;
+  margin: 6px !important;
+  /* white-space: normal !important; 
+  word-break: break-word !important; 
+  overflow-wrap: anywhere !important; */
+  display: block !important;
+  /* line-height: 1.2 !important;  */
+  /* display: flex !important; */
+  /* flex-direction: column !important;*/
+} 
+
+.rbc-wvent.container {
+  white-space: normal !important; 
+  word-break: break-word !important; 
+  overflow-wrap: anywhere !important;
+  display: block !important;
+}
+
+
+.rbc-event-label {
+    /* color: gray !important;
+    margin-bottom: 5px !important; */
+    display: none !important;
+}
+
+/* Calendar Month  */
+.rbc-month-header {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.rbc-day-bg {
+    background-color: #f7fdff !important;
+}
+
+.rbc-off-range-bg {
+     background-color: #e6e6e6 !important;
+}
+
+.rbc-button-link {
+    font-size: 14px !important;
+}

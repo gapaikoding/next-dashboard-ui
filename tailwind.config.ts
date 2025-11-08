@@ -13,8 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        lamaSky: '#c3ebfa',
+        lamaSkyLight: '#EDF9FD',
+        lamaPurple: '#CFCFFF',
+        lamaPurpleLight: '#F1F0FF',
+        lamaYellow: '#FAE27C',
+        lamaYellowLight: '#FEFCE8',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };
 export default config;
